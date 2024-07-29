@@ -1,0 +1,45 @@
+* {
+    text-shadow: 2px 2px #558ABB;
+    font-family: Montserrat;
+}
+body {
+    background-color: lightblue;
+}
+
+#numbers {
+    box-shadow: 2px #558ABB;
+    display: inline-flex;
+    border: 2px;
+    border-style: solid;
+    width: 3%;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 10px 10px;
+}
+
+#names {
+    box-shadow: 2px #558ABB;
+    display: inline-flex;
+    border: 2px;
+    border-style: solid;
+    width: 20%;
+    padding: 5px;
+}
+
+.numbersli {
+
+}
+
+.namesli {
+
+}
+
+#menu {
+    text-align: center;
+}

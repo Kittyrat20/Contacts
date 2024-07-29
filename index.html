@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contacts</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="menu">
+        <div id="numbers">
+            <ul>
+                <li class="numbersli">0</li>
+                <li class="numbersli">1</li>
+                <li class="numbersli">2</li>
+                <li class="numbersli">3</li>
+                <li class="numbersli">4</li>
+                <li class="numbersli">5</li>
+            </ul>
+        </div>
+        <div id="names">
+            <ul>
+                <li class="namesli">Arnold</li>
+                <li class="namesli">Sly</li>
+                <li class="namesli">Dwayne</li>
+                <li class="namesli">Vin</li>
+                <li class="namesli">JCVD</li>
+                <li class="namesli">Steven</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let running = true;
+        while (running) {
+            const contactbank = ['Arnold', 'Sly', 'Dwayne', 'Vin', 'JCVD', 'Steven'];
+            
+            let accinput = prompt(`Welcome new user. Please select an account number.`);
+            let contstatus = contactbank[accinput];
+
+
+
+            if (contstatus != null) {
+                running = alert(`Welcome, ${contstatus}`);
+            }
+            else running = confirm(`It appears this account does not exist. Would you like to try a different number?`);
+        }
+        
+        alert('Account Selection Canceled');
+
+    </script>
+
+
+    <footer>
+        <meta name="author" content="Harrison P.">
+    </footer>
+</body>
+</html>
